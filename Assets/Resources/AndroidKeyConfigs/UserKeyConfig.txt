@@ -1,0 +1,35 @@
+#https://sdk.picovr.com/docs/SystemKey/chapter_three.html
+#this config file is for user to define home key
+
+# Possible values:
+#7: Clean up background Apps
+#6: Reset the front direction
+#5: No function, but send the key notice
+#4: Go Back
+#3: Go Settings
+#2: Go Home
+#1: Do the defined action (example below)
+#0: Do nothing
+
+#if you want use system default config, please delete it
+
+# action_home_single_tap: по умолчанию при нажатии на секунду гаснет экран
+# action_home_single_tap=5
+
+# action_home_double_tap: по умолчанию при двойном нажатии выход в "заводское" меню шлема (Home)
+action_home_double_tap=5
+
+#action_home_long_press=0
+#time_home_double_tap=400
+#time_home_long_press=10000
+
+#you set the action by package and class name
+#you must set it if the action value is 1
+#action_home_single_tap_package=com.example.systemconfig
+#action_home_single_tap_class=com.example.systemconfig.Activity1
+
+#action_home_double_tap_package=com.example.systemconfig
+#action_home_double_tap_class=com.example.systemconfig.Activity2
+
+#action_home_long_press_package=com.example.systemconfig
+#action_home_long_press_class=com.example.systemconfig.Activity3

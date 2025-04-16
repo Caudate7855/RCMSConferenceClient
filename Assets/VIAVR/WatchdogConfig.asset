@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d1de0496c415e4b8cad1c286387ff9, type: 3}
+  m_Name: WatchdogConfig
+  m_EditorClassIdentifier: 
+  _version: 0.1.1
+  _packageName: com.viavr.watchdog
+  _serviceClassName: WatchdogService
+  _reloadIntentAction: com.viavr.intent.LAUNCHER_RUNNING
+  _commandIntentAction: com.viavr.intent.WATCHDOG_COMMAND
+  _streamingAssetsApkRelativePath: watchdog_signed.apk
+  _jsonConfig:
+    _targetPackage: com.viavr.museum
+    _targetPackageActivity: com.unity3d.player.UnityPlayerNativeActivityPico
+    _checkProcessEveryMs: 3000
+    _allowStartLauncher: 1
+    _allowReboot: 0
+    _everydayRebootAtHour: 12
+    _allowWakeup: 0
+    _wakeupEverySeconds: 3600
+    _wakeupRandomSeconds: 300
+    _allowSendRuntime: 1
+    _runtimeEverySeconds: 3600
+    _runtimeRandomSeconds: 300
+    _allowKillApps: 1
+    _launcherKillWhitelist:
+    - com.viavr.museum
+    - com.picovr.settings
