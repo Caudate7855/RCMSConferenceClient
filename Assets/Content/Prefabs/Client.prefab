@@ -102,6 +102,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   target: {fileID: 0}
+  View: {fileID: 4315797512950167238}
 --- !u!114 &3988355882605729276
 MonoBehaviour:
   m_ObjectHideFlags: 0

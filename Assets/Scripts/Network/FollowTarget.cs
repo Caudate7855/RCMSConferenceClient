@@ -4,16 +4,18 @@ using UnityEngine;
 public class FollowTarget : NetworkBehaviour
 {
     public GameObject target;
+    public GameObject View;
 
-    public void Awake()
+    public void Start()
     {
         if (isLocalPlayer)
         {
-            gameObject.SetActive(false);
+            View.SetActive(false);
+            target = FindObjectOfType<Pvr_UnitySDKHeadTrack>().gameObject;
         }
         else
         {
-            gameObject.SetActive(true);
+            View.SetActive(true);
         }
     }
 
