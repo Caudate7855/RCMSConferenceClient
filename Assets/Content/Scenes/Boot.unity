@@ -454,6 +454,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 402160636282875351, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
+    - {fileID: 2307647111876409086, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
+    - {fileID: 3653927954591136548, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
 --- !u!20 &607235690 stripped
 Camera:
@@ -800,7 +802,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 2204917921989597219, guid: 59822cb8cd3954d4890843c56cc107d6, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 7904808613996598929, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
