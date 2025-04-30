@@ -799,11 +799,10 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 10
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 2204917921989597219, guid: 59822cb8cd3954d4890843c56cc107d6, type: 3}
+  playerPrefab: {fileID: 4315797511656301809, guid: f2d44f06446335544acff3e5644c7d8d, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs:
-  - {fileID: 7904808613996598929, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
+  spawnPrefabs: []
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
