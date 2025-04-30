@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4315797511656301810}
   - component: {fileID: 5831977042089902022}
   - component: {fileID: -4048296778706062003}
+  - component: {fileID: -8031245187129021827}
+  - component: {fileID: 3988355882605729276}
   m_Layer: 0
   m_Name: Client
   m_TagString: Untagged
@@ -84,6 +86,34 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
+--- !u!114 &-8031245187129021827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315797511656301809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebae7df15a174320bf9c96a11df689be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  target: {fileID: 0}
+--- !u!114 &3988355882605729276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315797511656301809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e765aef850024a3e8cc8909c8f66b568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4315797512950167238
 GameObject:
   m_ObjectHideFlags: 0
