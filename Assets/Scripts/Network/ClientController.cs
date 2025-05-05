@@ -9,11 +9,21 @@ namespace Network
         
         private void Awake()
         {
-            _followObject = GameObject.FindObjectOfType<Pvr_UnitySDKManager>(true).gameObject;
+            if (!photonView.IsMine)
+            {
+                return;
+            }
+            
+            _followObject = FindObjectOfType<Pvr_UnitySDKManager>(true).gameObject;
         }
 
         private void Update()
         {
+            if (_followObject == null)
+            {
+                return;
+            }
+            
             transform.position = _followObject.transform.position;
             transform.rotation = _followObject.transform.rotation;
         }
