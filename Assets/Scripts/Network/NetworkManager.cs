@@ -1,18 +1,19 @@
-using CustomDebug;
+using Cysharp.Threading.Tasks;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine;
+using Debug = CustomDebug.Debug;
 
 namespace Network
 {
     public class NetworkManager : MonoBehaviourPunCallbacks
     {
+        [SerializeField] private bool _isHost;
+        [SerializeField] private GameObject _clientPrefab;
+        
         private void Start()
         {
             PhotonNetwork.ConnectUsingSettings();
-            
-            CreateRoom("Test",3);
-            
-            JoinRoom("Test");
         }
 
         public void CreateRoom(string roomName, int maxRoomClientsCapacity)
@@ -34,9 +35,19 @@ namespace Network
             PhotonNetwork.JoinLobby();
         }
 
-        public override void OnJoinedLobby()
+        public override async void OnJoinedLobby()
         {
             Debug.Log("Вошли в лобби");
+
+            await UniTask.Delay(5000);
+
+            if (_isHost)
+            {
+                CreateRoom("Test",3);
+            }
+            
+            await UniTask.Delay(5000);
+            JoinRoom("Test");
         }
         
         public override void OnCreatedRoom()
@@ -47,6 +58,8 @@ namespace Network
         public override void OnJoinedRoom()
         {
             Debug.Log("Подключились к комнате: " + PhotonNetwork.CurrentRoom.Name);
+            
+            PhotonNetwork.Instantiate(_clientPrefab.name, new Vector3(0,0,0), Quaternion.identity);
         }
 
         public override void OnCreateRoomFailed(short returnCode, string message)

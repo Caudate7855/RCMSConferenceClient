@@ -454,6 +454,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 402160636282875351, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
+    - {fileID: 3653927954591136548, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
+    - {fileID: 2307647111876409086, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c9684c3285a09c44ba0764a8fccaa7b, type: 3}
 --- !u!20 &607235690 stripped
 Camera:
@@ -819,6 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262832463}
   - component: {fileID: 1262832464}
+  - component: {fileID: 1262832465}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -850,6 +853,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 655c5f1c2ea74480a41a2b63cbe5ce22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isHost: 1
+  _clientPrefab: {fileID: 1802799513214763041, guid: 5e096d27b9354cf48a0035a1f35fd2f8, type: 3}
+--- !u!114 &1262832465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262832462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e765aef850024a3e8cc8909c8f66b568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1744248833 stripped
